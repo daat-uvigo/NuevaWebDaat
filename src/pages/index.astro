@@ -1,17 +1,71 @@
 ---
-
+import Layout from "../layout/Layout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+    <div>
+        <div id="home-carousel" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>LA DELEGACIÓN</h1>
+                        <p>Somos el órgano de representación estudiantil de la EET.</p>
+                        <a href="/sobre-nosotros" class="formated-button">Leer más</a>
+                    </div>
+                    <img src="/img/daat.jpg" alt="DAAT" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>LA ESCUELA</h1>
+                        <p>Nuestra escuela está situada en el Campus de Vigo.</p>
+                        <a href="http://teleco.uvigo.es" class="formated-button">Leer más</a>
+                    </div>
+                    <img src="/img/escuela.jpg" alt="Escuela" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>ALQUILER DE TAQUILLAS</h1>
+                        <p>Tenemos un servicio de taquillas a disposición de los alumnos.</p>
+                        <a href="/taquillas" class="formated-button">Leer más</a>
+                    </div>
+                    <img src="/img/taquillas.jpg" alt="Taquillas" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>REPRESENTACIÓN ESTUDIANTIL</h1>
+                        <p>La delegación de alumnos engloba a todos los representantes del estudiantado.</p>
+                        <a href="/taquillas" class="formated-button">Leer más</a>
+                    </div>
+                    <img src="/img/reuniones.jpg" alt="Representación" style="width:100%;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <div class="panel-heading">
+            <h2>Últimas noticias</h2>
+        </div>
+        <div id="tweetFeed" class="container">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="card card-body">
+                        <a class="twitter-timeline" data-height="1000" data-chrome="nofooter noborders noheaders transparent noscrollbar" href="https://twitter.com/DaatUvigo"></a>
+                        <script is:inline async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

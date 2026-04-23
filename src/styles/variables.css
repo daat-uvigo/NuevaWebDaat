@@ -1,0 +1,22 @@
+:root {
+  /* Navbar */
+  --navbar-default-bg: #1d67b4;
+  --navbar-subbar-bg: #e8e8f8;
+
+  /* Body */
+  --body-bg: #fff;
+
+  /* Text */
+  --text-color: #636b6f;
+  --text-font: 'Roboto', sans-serif;
+
+  /* Buttons */
+  --btn-default-color: var(--text-color);
+  --btn-carousel: var(--navbar-default-bg);
+
+  /* Panels */
+  --panel-default-heading-bg: #fff;
+
+  /* Footer */
+  --footer-bg: #333;
+}

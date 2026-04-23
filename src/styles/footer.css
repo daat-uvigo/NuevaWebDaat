@@ -1,0 +1,40 @@
+@import "variables.css";
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-top: 1px solid transparent;
+    border-color: #9e9d9d;
+    background-color: var(--footer-bg);
+
+    #footer-links {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            margin-right: 3rem;
+            margin-left: 3rem;
+            color: var(--navbar-subbar-bg);
+            font-size: 17px;
+
+            img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+#copyright {
+    background-color: var(--navbar-subbar-bg);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
