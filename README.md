@@ -1,10 +1,6 @@
-# Astro Starter Kit: Minimal
+# Nueva Web DAAT
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Esta es la antigua web de la DAAT migrada completamente a astro
 
 ## 🚀 Project Structure
 
