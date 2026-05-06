@@ -10,6 +10,14 @@ const { title } = Astro.props;
 
 ---
 
+<script>
+  const year = document.getElementById("year");
+    
+  if (year) {
+    year.innerText = new Date().getFullYear().toString();
+  }
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -57,7 +65,7 @@ const { title } = Astro.props;
                 </a>
             </div>
             <div id="copyright">
-                &copy; 2020 DAAT | Todos los derechos reservados. Esta web y su contenido ha sido creado por daat.uvigo.es
+                &copy; <span id="year"></span> DAAT | Todos los derechos reservados. Esta web y su contenido ha sido creado por daat.uvigo.es
             </div>
         </footer>
     </body>
