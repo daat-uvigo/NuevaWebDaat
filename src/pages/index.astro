@@ -1,5 +1,10 @@
 ---
 import Layout from "../layout/Layout.astro"
+
+import daatImage from "../img/daat.jpg"
+import escuelaImage from "../img/escuela.jpg"
+import taquillasImage from "../img/taquillas.jpg"
+import reunionesImage from "../img/reuniones.jpg"
 ---
 
 <Layout>
@@ -18,7 +23,7 @@ import Layout from "../layout/Layout.astro"
                         <p>Somos el órgano de representación estudiantil de la EET.</p>
                         <a href="/sobre-nosotros" class="formated-button">Leer más</a>
                     </div>
-                    <img src="/img/daat.jpg" alt="DAAT" style="width:100%;">
+                    <img src={daatImage.src} alt="DAAT" style="width:100%;">
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block">
@@ -26,7 +31,7 @@ import Layout from "../layout/Layout.astro"
                         <p>Nuestra escuela está situada en el Campus de Vigo.</p>
                         <a href="http://teleco.uvigo.es" class="formated-button">Leer más</a>
                     </div>
-                    <img src="/img/escuela.jpg" alt="Escuela" style="width:100%;">
+                    <img loading="lazy" decoding="async" src={escuelaImage.src} alt="Escuela" style="width:100%;">
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block">
@@ -34,7 +39,7 @@ import Layout from "../layout/Layout.astro"
                         <p>Tenemos un servicio de taquillas a disposición de los alumnos.</p>
                         <a href="/taquillas" class="formated-button">Leer más</a>
                     </div>
-                    <img src="/img/taquillas.jpg" alt="Taquillas" style="width:100%;">
+                    <img loading="lazy" decoding="async" src={taquillasImage.src} alt="Taquillas" style="width:100%;">
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block">
@@ -42,7 +47,7 @@ import Layout from "../layout/Layout.astro"
                         <p>La delegación de alumnos engloba a todos los representantes del estudiantado.</p>
                         <a href="/sobre-nosotros" class="formated-button">Leer más</a>
                     </div>
-                    <img src="/img/reuniones.jpg" alt="Representación" style="width:100%;">
+                    <img loading="lazy" decoding="async" src={reunionesImage.src} alt="Representación" style="width:100%;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">

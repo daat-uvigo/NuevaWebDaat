@@ -1,5 +1,10 @@
 ---
 
+import { Image } from "astro:assets";
+import logoImage from "../img/logo.png"
+import icCeet from "../img/ic_ceet.png"
+import icSanTeleco from "../img/ic_santeleco.png"
+import icEet from "../img/ic_eet.png"
 import "../styles/style.css"
 
 interface Props {
@@ -34,7 +39,7 @@ const { title } = Astro.props;
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid"> 
                     <a class="navbar-brand" href="/">
-                        <img class="icon-logo" src="/img/logo.png" alt="Inicio">
+                        <img class="icon-logo" src={logoImage.src} alt="Inicio">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
@@ -54,15 +59,15 @@ const { title } = Astro.props;
         <footer class="footer">
             <div id="footer-links">
                 <a class="navbar-brand" href="https://ceet.org.es/blog/" target="_blank">
-                    <img class="icon-logo" src="/img/ic_ceet.png" alt="Blog CEET">
+                    <Image class="icon-logo" src={icCeet} alt="Blog CEET">
                     <span>CEET</span>
                 </a>
                 <a class="navbar-brand" href="https://santeleco.uvigo.es/" target="_blank">
-                    <img class="icon-logo" src="/img/ic_santeleco.png" alt="San Teleco">
+                    <Image class="icon-logo" src={icSanTeleco} alt="San Teleco">
                     <span>San Teleco</span>
                 </a>
                 <a class="navbar-brand" href="http://teleco.uvigo.es/index.php/es/" target="_blank">
-                    <img class="icon-logo" src="/img/ic_eet.png" alt="Escola de Enxeñaría de Telecomunicación">
+                    <Image class="icon-logo" src={icEet} alt="Escola de Enxeñaría de Telecomunicación">
                     <span>EET</span>
                 </a>
             </div>
