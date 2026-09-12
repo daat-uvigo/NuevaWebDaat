@@ -1,5 +1,9 @@
 # Nueva Web DAAT
 
+Although this repository is public, the content is under copyright by the contributors of it and DAAT Uvigo.
+So no one except those who hold copyright can use/modify/share as stated here https://choosealicense.com/no-permission/
+
+---
 Esta es la antigua web de la DAAT migrada completamente a astro
 
 ## 🚀 Project Structure
